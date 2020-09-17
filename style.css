@@ -1,0 +1,78 @@
+.dark-mode{
+    filter: invert(100%) hue-rotate(180deg);
+}
+body{
+  background: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+   transition: color 300ms, background-color 300ms;
+}
+.her{
+  font-size: 50px;
+  animation: heart 2s ease-in-out infinite;
+  border: 5px solid #fff;
+  padding:10px;
+  border-radius:50%;
+  transform: scale(1.2);
+  transition: transform 10s ease;
+  color:red;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+  transiton: scale(1);
+  position: absolute;
+  top:0;
+  width: 100%;
+}
+@keyframes heart{
+  0%{
+    transform: scale(1.1);
+    border: 5px solid #fff;
+  }
+  60%{
+    transform: scale(1);
+    border: 2px solid #252525;
+  }
+  100%{
+    transform: scale(1.1);
+    border: 5px solid #fff;
+  }
+}
+h1{
+  margin-top: 150px;
+}
+.box-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+
+  display: block;
+  margin-left: 5px;
+  font-size: 20px;
+  color: red;
+  text-decoration: none;
+  border: 2px solid #000;
+  padding: 3px ;
+  border-radius: 30px;
+  width: 40px;
+  height: 20px;
+  position: relative;
+}
+#aw{
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  display: block;
+  background: red;
+  position: absolute;
+  left: 3px;
+}
